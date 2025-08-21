@@ -1,7 +1,2 @@
 [build]
-  publish = "."            # index.html이 있는 폴더
-  functions = "netlify/functions"
-
-[dev]
-  functions = "netlify/functions"
-  publish = "."
+  functions = "functions"
