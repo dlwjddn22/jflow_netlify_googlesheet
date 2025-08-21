@@ -1,0 +1,12 @@
+{
+  "name": "my-board",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "echo 'No build step' && exit 0"
+  },
+  "dependencies": {
+    "googleapis": "^133.0.0"
+  }
+}
