@@ -2,4 +2,4 @@
 
 1. DB : google sheet
 2. 형상관리 : github
-3. 자동배포 : netlify
+3. 자동배포 : netlify26
