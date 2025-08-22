@@ -10,12 +10,7 @@ export async function handler() {
       // Netlify 환경변수에 저장된 PRIVATE_KEY는 줄바꿈 문제가 있으므로 replace 처리
       process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
       ["https://www.googleapis.com/auth/spreadsheets"]
-    );
-
-    console.log(process.env.GOOGLE_CLIENT_EMAIL);
-    console.log(process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'));
-    console.log(process.env.SHEET_ID);
-    
+    );    
 
     const sheets = google.sheets({ version: "v4", auth });
     console.log("✅ Sheets API initialized");
