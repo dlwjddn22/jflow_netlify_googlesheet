@@ -12,7 +12,8 @@ export async function handler() {
       ["https://www.googleapis.com/auth/spreadsheets"]
     );
 
-    console.log("✅ Google Auth initialized");
+    console.log(process.env.GOOGLE_CLIENT_EMAIL);
+    console.log(process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'));
 
     const sheets = google.sheets({ version: "v4", auth });
     console.log("✅ Sheets API initialized");
